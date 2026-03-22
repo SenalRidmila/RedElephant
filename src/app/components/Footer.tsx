@@ -266,7 +266,7 @@ export default function Footer() {
                         fontSize: '0.9rem',
                         color: 'rgba(255,255,255,0.3)',
                     }}>
-                        © {new Date().getFullYear()} Red Elephant Travels & Tours. All rights reserved. Designed with ❤️ in Sri Lanka.
+                        © {new Date().getFullYear()} Red Elephant Travels & Tours. All rights reserved.
                     </p>
                     <div className="footer-bottom-links" style={{ display: 'flex', gap: '24px' }}>
                         {[
