@@ -1,0 +1,80 @@
+import CollectionPage from '../_collection/CollectionPage';
+
+const hillcountryData = {
+    id: 'hillcountry',
+    title: 'Hill Country',
+    subtitle: 'Misty Mountains & Tea Trails',
+    headline: 'Above the Clouds, Among the Tea',
+    description: 'Rising from steaming jungle lowlands to alpine plateaus carpeted in endless tea bushes, Sri Lanka\'s hill country is a world of misty waterfalls, colonial bungalows, scenic train journeys, and wild highlands. The air is crisp, the tea is fresh, and the views are absolutely breathtaking.',
+    heroImage: '/assets/nuwara-eliya/nuwara-eliya-top-banner.webp',
+    accentColor: '#66BB6A',
+    accentGradient: 'linear-gradient(135deg, #1A3A2A 0%, #66BB6A 100%)',
+    stats: [
+        { value: '2,524', label: 'Metres Highest Peak' },
+        { value: '4', label: 'Major Destinations' },
+        { value: '185,000', label: 'Hectares of Tea' },
+        { value: '100+', label: 'Waterfalls' },
+    ],
+    destinations: [
+        {
+            id: 'ella',
+            name: 'Ella',
+            type: 'Hill Village',
+            tagline: 'The Most Scenic View in Sri Lanka',
+            image: '/assets/nuwara-eliya/ella-sri-lanka-gallery-1.webp',
+            description: 'A tiny, breathtaking hill village nestled in a dramatic mountain gap. Famous for the iconic 9-arch bridge, misty valley views, and the relaxed vibe that captivates everyone who visits.',
+            bestTime: 'Jan – Apr',
+            famousFor: 'Nine Arch Bridge & Hiking',
+            highlights: ['Nine Arch Bridge', 'Little Adam\'s Peak', 'Ravana Falls'],
+        },
+        {
+            id: 'nuwaraeliya',
+            name: 'Nuwara Eliya',
+            type: 'Hill Station',
+            tagline: 'Little England in the Clouds',
+            image: '/assets/nuwara-eliya/nuwara-eliya-1.webp',
+            description: 'At 1,868m elevation, this charming colonial-era hill station is known as \'Little England\' for its Gothic architecture, golf course, rose gardens, and crisp cool air.',
+            bestTime: 'Dec – Apr',
+            famousFor: 'Colonial Charm & Tea Estates',
+            highlights: ['Victoria Park', 'Tea Factory Visits', 'Horton Plains Access'],
+        },
+        {
+            id: 'hatton',
+            name: 'Hatton',
+            type: 'Hill Country',
+            tagline: 'The Heart of the Tea Trails',
+            image: '/assets/nuwara-eliya/haton-top-banner.webp',
+            description: 'The gateway to the finest Ceylon tea country. Characterized by plunging waterfalls, pine-studded hills, colonial planter bungalows, and endless carpets of tea bushes.',
+            bestTime: 'Dec – Apr',
+            famousFor: 'Ceylon Tea & Cool Climate',
+            highlights: ['Tea Estate Walks', 'Adam\'s Peak Hike', 'Castlereagh Reservoir'],
+        },
+        {
+            id: 'knuckles',
+            name: 'Knuckles Range',
+            type: 'UNESCO Wilderness',
+            tagline: 'The Lost Mountain Wilderness',
+            image: '/assets/hill-country/hill-country-top-banner.webp',
+            description: 'A UNESCO World Heritage wilderness of dramatic ridges, cloud forests, and remote villages. One of the last truly wild and unspoiled trekking destinations in the country.',
+            bestTime: 'Jan – Apr',
+            famousFor: 'Trekking & Cloud Forests',
+            highlights: ['Cloud Forest Treks', 'Secret Waterfalls', 'Endemic Wildlife'],
+        },
+        {
+            id: 'hortonplains',
+            name: 'Horton Plains',
+            type: 'National Park',
+            tagline: 'The Edge of the World',
+            image: '/assets/nuwara-eliya/horton-plains-nuwara-eliya-gallery-1.webp',
+            description: 'A hauntingly beautiful highland plateau at 2,100m, leading to World\'s End — an 880m sheer vertical cliff revealing a staggering panorama to the sea.',
+            bestTime: 'Jan – May',
+            famousFor: 'World\'s End & Baker\'s Falls',
+            highlights: ['World\'s End Viewpoint', 'Baker\'s Falls', 'Highland Wildlife'],
+        },
+    ],
+    relatedTour: { label: 'Highland Retreat Package', href: '/tours/highland-retreat' },
+};
+
+export default function HillCountryPage() {
+    return <CollectionPage data={hillcountryData} />;
+}

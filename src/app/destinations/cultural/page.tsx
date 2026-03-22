@@ -1,0 +1,80 @@
+import CollectionPage from '../_collection/CollectionPage';
+
+const culturalData = {
+    id: 'cultural',
+    title: 'Cultural Triangle',
+    subtitle: 'Ancient Kingdoms & Sacred Sites',
+    headline: 'Where Kingdoms Rose to the Sky',
+    description: 'Sri Lanka\'s Cultural Triangle is a UNESCO-protected heartland of ancient civilisation — an extraordinary concentration of palaces, stupas, carved cave temples, and sacred cities spanning over 2,500 years. Walking amongst these ruins is a journey through some of Asia\'s greatest architectural achievements.',
+    heroImage: '/assets/cultural-triangle-top-banner.webp',
+    accentColor: '#E6B84A',
+    accentGradient: 'linear-gradient(135deg, #7B3F00 0%, #E6B84A 100%)',
+    stats: [
+        { value: '8', label: 'UNESCO Sites' },
+        { value: '2,500+', label: 'Years of History' },
+        { value: '6', label: 'Ancient Cities' },
+        { value: '1,000+', label: 'Rock Caves' },
+    ],
+    destinations: [
+        {
+            id: 'sigiriya',
+            name: 'Sigiriya',
+            type: 'Ancient Fortress',
+            tagline: 'The Eighth Wonder of the World',
+            image: '/assets/culture-package/sigiriya.webp',
+            description: 'A 200m-high sheer rock monolith with a sky-palace fortress built by a rogue king in the 5th century. Considered Sri Lanka\'s greatest single architectural treasure.',
+            bestTime: 'Jan – Apr',
+            famousFor: 'The Lion Rock Fortress',
+            highlights: ['Sky-Palace Ruins', 'Fresco Maidens', 'Water Gardens'],
+        },
+        {
+            id: 'anuradhapura',
+            name: 'Anuradhapura',
+            type: 'Sacred City',
+            tagline: 'The First Capital of Ancient Kings',
+            image: '/assets/anuradhapura/ruwanweliseya-anuradhapura-gallery-1.webp',
+            description: 'The spiritual heart of Sri Lanka — a vast network of ancient palaces and giant white stupas, serving as the island\'s capital for over a millennium.',
+            bestTime: 'May – Sep',
+            famousFor: 'Giant Stupas & Sacred Bodhi Tree',
+            highlights: ['Sacred Bodhi Tree', 'Ruwanweliseya Stupa', 'Twin Ponds'],
+        },
+        {
+            id: 'polonnaruwa',
+            name: 'Polonnaruwa',
+            type: 'Ancient City',
+            tagline: 'The Medieval Capital',
+            image: '/assets/pollonnaruwa/galviharaya-polonnaruwa.webp',
+            description: 'Sri Lanka\'s well-preserved medieval capital at its zenith under King Parakramabahu I. Features the spectacular Gal Vihara — four giant Buddhas carved from a single granite wall.',
+            bestTime: 'May – Sep',
+            famousFor: 'Rock Buddhas & Cycling Tours',
+            highlights: ['Gal Vihara', 'Royal Palace Ruins', 'Sea of Parakrama'],
+        },
+        {
+            id: 'dambulla',
+            name: 'Dambulla',
+            type: 'Cave Temple',
+            tagline: 'A Masterpiece of Buddhist Art',
+            image: '/assets/dambulla/dambulla-1.webp',
+            description: 'The largest and best-preserved cave temple complex in Sri Lanka. Five caves contain over 150 Buddha statues and breathtaking ceiling frescoes dating back to the 1st century BC.',
+            bestTime: 'Jan – May',
+            famousFor: 'Cave Temples & Frescoes',
+            highlights: ['Golden Temple', 'Reclining Buddha', 'Ancient Frescoes'],
+        },
+        {
+            id: 'kandy',
+            name: 'Kandy',
+            type: 'Royal Capital',
+            tagline: 'The Last Kingdom of Sri Lanka',
+            image: '/assets/kandy/kandy-1.webp',
+            description: 'Nestled in the central mountains, Kandy was the last stronghold of the Sinhalese Kings and remains the spiritual capital — home to the revered Temple of the Sacred Tooth Relic.',
+            bestTime: 'Jan – Apr',
+            famousFor: 'Temple of the Tooth & Esala Perahera',
+            highlights: ['Temple of the Tooth', 'Kandy Lake', 'Esala Perahera Festival'],
+        },
+    ],
+    relatedTour: { label: 'Cultural Classic Package', href: '/tours/cultural-classic' },
+};
+
+export default function CulturalPage() {
+    return <CollectionPage data={culturalData} />;
+}

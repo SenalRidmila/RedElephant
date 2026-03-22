@@ -1,0 +1,72 @@
+﻿npx : ΓÜá Warning: Next.js 
+inferred your workspace 
+root, but it may not be 
+correct.
+At line:1 char:1
++ npx next build 2>&1 | 
+Out-File -FilePath 
+"build2.txt" -Encoding utf8; 
+...
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (ΓÜá War  
+  ning: Ne...not be correc   
+ t.:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+ We detected multiple 
+lockfiles and selected the 
+directory of C:\Users\Lahir\p
+ackage-lock.json as the root 
+directory.
+ To silence this warning, 
+set `turbopack.root` in your 
+Next.js config, or consider 
+removing one of the 
+lockfiles if it's not needed.
+   See https://nextjs.org/doc
+s/app/api-reference/config/ne
+xt-config-js/turbopack#root-d
+irectory for more 
+information.
+ Detected additional 
+lockfiles: 
+   * 
+C:\Users\Lahir\Desktop\Red El
+ephant\web\web\travel-app\pac
+kage-lock.json
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 6.8s
+  Running TypeScript ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/12) ...
+  Generating static pages using 11 workers (3/12) 
+  Generating static pages using 11 workers (6/12) 
+  Generating static pages using 11 workers (9/12) 
+Γ£ô Generating static pages using 11 workers (12/12) in 673.8ms
+  Finalizing page optimization ...
+
+Route (app)
+Γöî Γùï /
+Γö£ Γùï /_not-found
+Γö£ Γùï /about
+Γö£ ╞Æ /destinations/[id]
+Γö£ Γùï /destinations/beaches
+Γö£ Γùï /destinations/cultural
+Γö£ Γùï /destinations/heritage
+Γö£ Γùï /destinations/hillcountry
+Γö£ Γùï /destinations/wildlife
+Γö£ Γùï /packages
+Γö£ ╞Æ /tours/[id]
+Γö£ Γùï /weddings
+Γöö Γùï /wellness
+
+
+Γùï  (Static)   prerendered as static content
+╞Æ  (Dynamic)  server-rendered on demand
+
